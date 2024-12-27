@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert YouTube videos to MP3 or MP4 and download with our fastest and free YouTube converter. CnvMP3 is ad-free, safe and supports quality up to 320kbps.">
+    <title>Youtube to MP3 Converter (Ad-free)</title>
+    <link rel="canonical" href="https://cnvmp3.com">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/img/favicon.ico" sizes="192x192">
+    <link rel="icon" href="/img/favicon.ico" sizes="39x39">
+    <link rel="apple-touch-icon" href="/img/favicon.ico" sizes="192x192">
+    <meta name="p:domain_verify" content="0e60bec8f39d35093664c63d990ce0c8"/>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MF283RRQCW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-MF283RRQCW');
+    </script>
+    <!-- TrustBox script -->
+    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+    <!-- End TrustBox script -->
+</head>
+<body>
+<header>
+    <div id="theme-button">Dark Theme</div>
+    <a href="https://cnvmp3.com"><img src="/img/cnvmp3-black.png" alt="Image description CnvMP3" id="website-image"></a>
+</header>
+<main>
+    <section class="main-content content-first">
+        <div class="reddit" style="margin-bottom: 10px">
+            <div>Join us on Reddit:</div>
+            <a href="https://www.reddit.com/r/cnvmp3/" target="_blank">r/CnvMP3</a>
+        </div>
+        <div style="position:relative;">
+
+            <div>
+                <div class="note"><img src="img/coffee-icon.svg" alt="">
+                    <span>Help me by saying thanks in this <a href="https://www.reddit.com/r/editing/comments/1hesfel/youtube_to_mp4_converter_that_is_safe/" target="_blank"><span style="text-decoration: underline; font-weight:600;"> Reddit Thread</span></a>. and <a href="https://ko-fi.com/cnvmp3" target="_blank"><span style="text-decoration: underline; font-weight:600;"> Buy me a coffee</span></a> to keep this website ad-free</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="converter content-first main-content" id="converter-section">
+        <div id="form-container" class="converter-box">
+            <div id="converter-form" class="converter-input-box">
+                <div class="converter-input">
+                    <div class="input-text">
+                        <span class="social-input-youtube">Enter YouTube Video or Shorts URL</span>
+                        <span class="social-input-tiktok" style="display: none">Enter TikTok URL</span>
+                        <span class="social-input-reddit-button" style="display: none">Enter Reddit Video URL</span>
+                        <span class="social-input-instagram" style="display: none">Enter Instagram Reel URL</span>
+                        <span class="social-input-facebook" style="display: none">Enter Facebook Video URL</span>
+                        <span class="social-input-twitch" style="display: none">Enter Twitch Clip URL</span>
+                        <span class="social-input-twitter" style="display: none">Enter Twitter Video URL</span>
+                    </div>
+                    <input type="text" id="video-url" class="input-field-url" placeholder="https://www.youtube.com/watch?v=yPvoKz6tyJs" required>
+                </div>
+                <div class="converter-format-button">
+                    <div class="quality-video-select-box" style="display: none">
+                        <div class="input-text" id="quality-video-input-text" style="display: none">
+                            <span>Quality</span>
+                        </div>
+                        <div id="quality-video-select-display">
+                            <span id="quality-video-select-display-value">720p</span>
+                            <img id="dropdown-icon-quality" alt="" src="dropdown-icon.svg" width="15px">
+                        </div>
+                        <div id="quality-video-select-list" style="display:none;">
+                            <div id="quality-video-select-list-144" class="quality-video-select-options" data-quality="144">144p</div>
+                            <div id="quality-video-select-list-360" class="quality-video-select-options" data-quality="360">360p</div>
+                            <div id="quality-video-select-list-480" class="quality-video-select-options" data-quality="480">480p</div>
+                            <div id="quality-video-select-list-720" class="quality-video-select-options active" data-quality="720">720p</div>
+                            <div id="quality-video-select-list-1080" class="quality-video-select-options" data-quality="1080">1080p</div>
+                        </div>
+                    </div>
+                    <div class="quality-audio-select-box">
+                        <div class="input-text" id="quality-audio-input-text">
+                            <span>Bitrate</span>
+                        </div>
+                        <div id="quality-audio-select-display">
+                            <span id="quality-audio-select-display-value">128kb/s</span>
+                            <img id="dropdown-icon-quality" alt="" src="dropdown-icon.svg" width="15px">
+                        </div>
+                        <div id="quality-audio-select-list" style="display:none;">
+                            <div id="quality-audio-select-list-96" class="quality-audio-select-options" data-quality="96">96kb/s</div>
+                            <div id="quality-audio-select-list-128" class="quality-audio-select-options active" data-quality="128">128kb/s</div>
+                            <div id="quality-audio-select-list-256" class="quality-audio-select-options" data-quality="256">256kb/s</div>
+                            <div id="quality-audio-select-list-320" class="quality-audio-select-options" data-quality="320">320kb/s</div>
+                        </div>
+                    </div>
+                    <div class="format-select-box">
+                        <div class="input-text">
+                            <span>MP3 / MP4</span>
+                        </div>
+                        <div id="format-select-display">
+                            <span id="format-select-display-value">MP3</span>
+                            <img id="dropdown-icon-quality" alt="" src="dropdown-icon.svg" width="15px">
+                        </div>
+                        <div id="format-select-list" style="display:none;">
+                            <div class="format-select-options active" data-format="1">MP3</div>
+                            <div class="format-select-options" data-format="0">MP4</div>
+                        </div>
+                    </div>
+                    <label class="converter-button-container">
+                        <img src="converter-icon.svg" alt="" width="20px">
+                        <input id="convert-button-1" class="button" type="submit" value="Convert">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="spinner" style="display:none;">
+            <div class="animation-box" style="margin-bottom:20px">
+                <img src="converter-icon.svg" alt="" width="50px">
+                <span>Processing...</span>
+            </div>
+        </div>
+
+        <div class="video-info" id="video-info" style="display: none;">
+            <h1 id="video-title">While you wait for your download please consider supporting me so I can keep the website ads free. Big thank you!</h1>
+            <h1 id="secondary-message" style="display: none;">You can't download MP4 longer than 1 hour and MP3 longer than 1 hour and 30 minutes!</h1>
+            <div class="button-row">
+                <a id="donate-btn" class="button converter-button-container" href="https://ko-fi.com/cnvmp3" target="_blank"><img src="img/coffee-icon.svg" target="_blank" alt="">Buy me a coffee</a>
+                <a id="convert-again-btn" class="button converter-button-container" href="javascript:window.location.reload(true)"><img src="converter-icon.svg" alt="" width="20px">Convert Again</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="bottom-items">
+        <div class="social-platforms">
+            <h2>Supported Sites</h2>
+            <label class="social-button-container youtube active">
+                <i class="fa-brands fa-youtube"></i>
+                <input id="convert-button-1" class="social-button" type="submit" value="Youtube Videos & Shorts">
+            </label>
+            <label class="social-button-container tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+                <input id="convert-button-1" class="social-button" type="submit" value="Tiktok Videos">
+            </label>
+            <label class="social-button-container reddit-button">
+                <i class="fa-brands fa-reddit-alien"></i>
+                <input id="convert-button-1" class="social-button" type="submit" value="Reddit Videos & Gifs">
+            </label>
+            <label class="social-button-container instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <input id="convert-button-1" class="social-button" type="submit" value="Instagram Reels">
+            </label>
+            <label class="social-button-container facebook">
+                <i class="fa-brands fa-facebook"></i>
+                <input id="convert-button-1" class="social-button" type="submit" value="Facebook Videos">
+            </label>
+            <label class="social-button-container twitch">
+                <i class="fa-brands fa-twitch"></i>
+                <input id="convert-button-1" class="social-button" type="submit" value="Twitch Clips">
+            </label>
+            <label class="social-button-container twitter">
+                <i class="fa-brands fa-twitter"></i>
+                <input id="convert-button-1" class="social-button" type="submit" value="X-Twitter Videos">
+            </label>
+        </div>
+        <section class="content-second-youtube content-second">
+            <h2>YouTube to MP3 Converter</h2>
+            <p>CnvMP3 is a tool that allows you to download YouTube videos and convert it into mp3 (audio) or mp4 (video) format. That way you can listen to YouTube songs and podcasts on your device offline and where you can't access the YouTube. CnvMP3 is a YouTube to MP3 or MP4 Converter that is free to use. You can download anything from YouTube in MP3 or MP4 format simply by copy and pasting an URL from YouTube video.</p>
+
+            <h2>How to Download YouTube Videos as MP3</h2>
+            <ol>
+                <li>Go to youtube.com and search for a video that you want to convert and download.</li>
+                <li>Copy the video url from the browser bar or from the YouTube share button (the format should look like this: youtube.com/watch?v=abcdefghjkl)</li>
+                <li>Paste the url into our converter and choose in which format it should be converted and downloaded (MP3 or MP4). The default format is MP3. It can also be Youtube shorts video</li>
+                <li>Start the convertion by clicking the "CONVERT" button</li>
+                <li>Download the converted file affter the process is done by selecting the destination path and saving into your device</li>
+            </ol>
+
+            <h2>Why to use CnvMP3 YouTube to MP3/MP4 converter</h2>
+            <p>CnvMP3 converter is fast and free to use. Videos are supported for up to 180 minutes in length (3 hours). There is no need for users to register or login to convert YouTube videos to MP3. CnvMP3 converter is <a href="https://cnvmp3.com/youtube-to-mp3-converter-reddit">ad-free</a>, that means that there are no ads on the page - because we all know how annoying ads can be. It is totally safe to use, without any bloat or viruses. I also don't collect any kind user information. Thats why CnvMP3 is one of the best and safest YouTube to MP3 converters out there. Since I don't make any money from ads, I would really appreciate any donations to cover the server cost, so I can keep it ad-free. Link for donations with Ko-fi: Ko-fi donations If you like CnvMP3 converter, please bookmark it.</p>
+        </section>
+        <section class="content-second-tiktok content-second" style="display: none">
+            <h2>How to use CnvMP3 To Download TikTok video</h2>
+            <p>You find the TikTok video that you want to download. You copy the Url and paste it to the input field. Always choose MP4 when downloading videos and click on the convert button. It's free to use and it's the safest downloader/converter on the internet</p>
+        </section>
+        <section class="content-second-reddit-button content-second" style="display: none">
+            <h2>How to use CnvMP3 To Download Reddit video</h2>
+            <p>You find the Reddit video that you want to download. You copy the Url and paste it to the input field. Always choose MP4 when downloading videos and click on the convert button. It's free to use and it's the safest downloader/converter on the internet</p>
+        </section>
+        <section class="content-second-instagram content-second" style="display: none">
+            <h2>How to use CnvMP3 To Download Instagram Reel</h2>
+            <p>You find the Instagram Reel that you want to download. You copy the Url and paste it to the input field. Always choose MP4 when downloading reels and click on the convert button. It's free to use and it's the safest downloader/converter on the internet</p>
+        </section>
+        <section class="content-second-facebook content-second" style="display: none">
+            <h2>How to use CnvMP3 To Download Facebook video</h2>
+            <p>You find the Facebook video that you want to download. You copy the Url and paste it to the input field. Always choose MP4 when downloading videos and click on the convert button. It's free to use and it's the safest downloader/converter on the internet</p>
+        </section>
+        <section class="content-second-twitch content-second" style="display: none">
+            <h2>How to use CnvMP3 To Download Twitch Clip</h2>
+            <p>You find the Twitch clip that you want to download. You copy the Url and paste it to the input field. Always choose MP4 when downloading twitch clips and click on the convert button. It's free to use and it's the safest downloader/converter on the internet</p>
+        </section>
+        <section class="content-second-twitter content-second" style="display: none">
+            <h2>How to use CnvMP3 To Download Twitter video</h2>
+            <p>You find the Twitter video that you want to download. You copy the Url and paste it to the input field. Always choose MP4 when downloading videos and click on the convert button. It's free to use and it's the safest downloader/converter on the internet</p>
+        </section>
+
+    </div>
+</main>
+<footer>
+    <div class="footer-content">
+        <div>&copy; 2024 YouTube to MP3 Converter</div>
+        <div id="terms">
+            <a href="/contact">Contact</a>
+            <a href="/copyright-claims">Copyright claims</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-use">Terms of Use</a>
+        </div>
+    </div>
+</footer>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+    kofiWidgetOverlay.draw('cnvmp3', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support me',
+        'floating-chat.donateButton.background-color': '#00bfa5',
+        'floating-chat.donateButton.text-color': '#fff'
+    });
+</script>
+
+<script>
+    let extension = 1;
+    let videoTitle = '';
+    let videoUrl = '';
+    let youtubeId = '';
+    let videoQuality = '';
+    let videoServerPath = '';
+    let formatValue = 1;
+    let audioQuality = 4;
+
+    let videoData = {
+        check_database: {
+            youtube_id: youtubeId,
+            quality: formatValue === 1 ? audioQuality : videoQuality,
+        },
+        get_video_data: {
+            url: videoUrl
+        },
+        download_video: {
+            url: videoUrl,
+            quality: formatValue === 1 ? audioQuality : videoQuality,
+            title: videoTitle,
+            formatValue: formatValue,
+        },
+        insert_to_database: {
+            youtube_id: youtubeId,
+            server_path: videoServerPath,
+            quality: formatValue === 1 ? audioQuality : videoQuality,
+            title: videoTitle,
+            formatValue: formatValue,
+        }
+    }
+
+    let starting_data = {
+        url: videoUrl,
+        downloadMode: 'audio',
+        filenameStyle: 'basic',
+        audioBitrate: '96',
+    };
+
+    function getYouTubeVideoId(url) {
+        const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|embed|watch|shorts)\/|.*[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})(?:[&?]|$)/;
+        const match = url.match(regex);
+
+        return match ? match[1] : null;
+    }
+
+    function showFullVideoInfo() {
+        const videoInfo = document.getElementById("video-info");
+        const videoTitle = document.getElementById("video-title");
+        const secondaryMessage = document.getElementById("secondary-message");
+        const buttonRow = document.querySelector(".button-row");
+        // const donateButton = document.querySelector(".donate-btn");
+
+        videoInfo.style.display = "block";      // Show entire video-info section
+        videoTitle.style.display = "block";     // Show the first h1
+        secondaryMessage.style.display = "none"; // Hide the second h1
+        buttonRow.style.display = "flex";       // Show the button row
+        // donateButton.style.display = "flex";	// SHow the donate button
+    }
+
+    function showMinimalVideoInfo() {
+        const videoInfo = document.getElementById("video-info");
+        const videoTitle = document.getElementById("video-title");
+        const secondaryMessage = document.getElementById("secondary-message");
+        const buttonRow = document.querySelector(".button-row");
+        // const donateButton = document.querySelector(".donate-btn");
+
+        videoInfo.style.display = "block";      // Show entire video-info section
+        videoTitle.style.display = "none";      // Hide the first h1
+        secondaryMessage.style.display = "block"; // Show the second h1
+        buttonRow.style.display = "flex";       // Hide the button row
+        // donateButton.style.display = "none";	// Hide the donation button
+    }
+
+    function getAudioQuality(audioQuality) {
+        switch (audioQuality) {
+            case 320:
+                return 0;
+            case 256:
+                return 1;
+            case 128:
+                return 4;
+            case 96:
+                return 5;
+            default:
+                return 4; // Default case for any other value
+        }
+    }
+
+    function checkDatabase(data, retries = 0) {
+        fetch('check_database.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    getVideoData(videoData.get_video_data)
+                } else {
+                    const downloadUrl = data.data.server_path.replace(/&/g, '%26').replace(/#/g, '%23').replace(/\+/g, '%2B');
+
+                    document.getElementById('form-container').style.display = 'none';
+                    document.getElementById('spinner').style.display = 'none';
+                    showFullVideoInfo();
+
+                    // Automatically download the file
+                    const a = document.createElement('a');
+                    a.href = downloadUrl;
+                    a.download = 'downloaded_file.mp3';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    //console.log(data)
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+    function getVideoData(data, retries = 0) {
+        fetch('get_video_data.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert('Error: ' + data.error);
+                } else {
+                    videoData.download_video.title = data.title;
+                    videoData.insert_to_database.title = data.title;
+                    document.querySelector('#spinner span').textContent = 'Converting...';
+                    downloadVideo(videoData.download_video);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+    function downloadVideo(data, retries = 0) {
+        fetch('download_video.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error && data.errorType == 4) {
+                    document.getElementById('form-container').style.display = 'none';
+                    document.getElementById('spinner').style.display = 'none';
+                    showMinimalVideoInfo();
+                } else if (data.error && data.errorType != 4) {
+                    alert('Error: ' + data.error);
+                } else {
+                    const downloadUrl = data.download_link.replace(/&/g, '%26').replace(/#/g, '%23').replace(/\+/g, '%2B');
+
+                    document.getElementById('form-container').style.display = 'none';
+                    document.getElementById('spinner').style.display = 'none';
+                    showFullVideoInfo();
+
+                    // Automatically download the file
+                    const a = document.createElement('a');
+                    console.log(downloadUrl)
+                    a.href = downloadUrl;
+                    a.download = 'downloaded_file.mp3';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    //console.log(data)
+
+                    videoData.insert_to_database.server_path = data.download_link;
+
+                    insertToDatabase(videoData.insert_to_database);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+    function insertToDatabase(data, retries = 0) {
+        fetch('insert_to_database.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert('Error: ' + data.error);
+                } else {
+                    console.log('success');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+
+    function fetchData(data, retries = 0) {
+        fetch('fetch.php', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    console.log('Error: ' + data.error);
+                    alert('Error: ' + data.error);
+                } else if (data["status"] == "rate-limit") {
+                    if (retries < 15) {
+                        document.getElementById('spinner').style.display = 'block';
+                        // Retry after 15 seconds if rate limit is hit, and increment the retry counter
+                        setTimeout(() => {
+                            fetchData(starting_data, retries + 1);
+                        }, 2000); // 1 second delay
+                        console.log(`There was an error, trying again... Attempt ${retries}`);
+                    } else {
+                        // If it has been retried 15 times, show the alert
+                        alert('Too many requests, try again in 5 seconds');
+                        location.reload();
+                    }
+                } else {
+                    const downloadUrl = data.url;
+
+                    document.getElementById('form-container').style.display = 'none';
+                    document.getElementById('video-info').style.display = 'block';
+                    document.getElementById('spinner').style.display = 'none';
+
+                    // Automatically download the file
+                    const a = document.createElement('a');
+                    a.href = downloadUrl;
+                    a.download = 'downloaded_file.mp3';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    //console.log(data)
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
+    document.getElementById('convert-button-1').addEventListener('click', function() {
+        videoUrl = document.getElementById('video-url').value;
+
+        if (!videoUrl) {
+            alert('Please enter a video URL');
+            return;
+        }
+
+        youtubeId = getYouTubeVideoId(videoUrl);
+
+        youtubeVideoUrl = "https://www.youtube.com/watch?v=" + youtubeId;
+
+
+        audioQuality = document.getElementById('quality-audio-select-display-value').textContent;
+        videoQuality = document.getElementById('quality-video-select-display-value').textContent;
+        // Select the label element
+        youtubeLabel = document.querySelector('label.social-button-container.youtube.active');
+
+        // Check if it has both classes
+        isYoutubeActive = youtubeLabel && youtubeLabel.classList.contains('youtube') && youtubeLabel.classList.contains('active');
+
+        starting_data.url = videoUrl;
+        starting_data.downloadMode = extension === 1 ? 'audio' : 'auto',
+
+            videoData.check_database.youtube_id = youtubeId;
+        videoData.get_video_data.url = youtubeVideoUrl;
+        videoData.download_video.url = youtubeVideoUrl;
+        videoData.insert_to_database.youtube_id = youtubeId;
+
+
+        document.getElementsByClassName('converter-button-container')[0].style.pointerEvents = 'none';
+        document.getElementsByClassName('converter-button-container')[0].style.opacity = 0.5;
+
+        formatValue = parseInt(document.querySelector('.format-select-options.active').getAttribute('data-format'));
+
+        videoData.check_database.formatValue = formatValue;
+        videoData.download_video.formatValue = formatValue;
+        videoData.insert_to_database.formatValue = formatValue;
+
+
+        if (formatValue === 0 && isYoutubeActive) {
+            videoQuality = parseInt(videoQuality.replace("p", ""), 10);
+
+            // Compare and limit the quality to 1080 if it’s higher
+            videoQuality = videoQuality > 1080 ? 1080 : videoQuality;
+
+            videoData.check_database.quality = videoQuality;
+
+            videoData.download_video.quality = videoQuality;
+
+            videoData.insert_to_database.quality = videoQuality;
+            // Call fetchData with the initial data and starting retries count of 0
+            console.log(videoData.insert_to_database.formatValue)
+            checkDatabase(videoData.check_database);
+            document.getElementById('spinner').style.display = 'flex';
+        } else if (formatValue === 1 && isYoutubeActive) {
+            audioQuality = parseInt(audioQuality.replace("kb/s", ""), 10);
+
+            audioQuality = getAudioQuality(audioQuality)
+
+            videoData.check_database.quality = audioQuality;
+
+            videoData.download_video.quality = audioQuality;
+
+            videoData.insert_to_database.quality = audioQuality;
+            // Call fetchData with the initial data and starting retries count of 0
+            console.log(videoData.insert_to_database.formatValue)
+            checkDatabase(videoData.check_database);
+            document.getElementById('spinner').style.display = 'flex';
+        } else {
+            fetchData(starting_data);
+        }
+    });
+
+    document.querySelectorAll('.social-button-container').forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove 'active' class from all buttons
+            document.querySelectorAll('.social-button-container').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked button
+            this.classList.add('active');
+
+            // Hide all social-input fields
+            document.querySelectorAll('[class^="social-input-"]').forEach(input => {
+                input.style.display = 'none';
+            });
+
+            // Hide all content-second sections
+            document.querySelectorAll('[class^="content-second-"]').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the corresponding social-input field
+            const inputClass = `.social-input-${this.classList[1]}`;
+            const inputElement = document.querySelector(inputClass);
+            if (inputElement) {
+                inputElement.style.display = 'block';
+            }
+
+            // Show the corresponding content-second section
+            const sectionClass = `.content-second-${this.classList[1]}`;
+            const sectionElement = document.querySelector(sectionClass);
+            if (sectionElement) {
+                sectionElement.style.display = 'block';
+            }
+
+            // Set the format-select-options based on the clicked button
+            const formatOptions = document.querySelectorAll('.format-select-options');
+            formatOptions.forEach(option => {
+                option.classList.remove('active');
+            });
+
+            if (this.classList.contains('youtube')) {
+                document.querySelector('.format-select-options[data-format="1"]').classList.add('active');
+                document.getElementById('format-select-display-value').textContent = 'MP3';
+                audioBox = document.querySelector(".quality-audio-select-box");
+                videoBox = document.querySelector(".quality-video-select-box");
+                audioInputText = document.querySelector("#quality-audio-input-text");
+                videoInputText = document.querySelector("#quality-video-input-text");
+                imageElement = document.getElementById('website-image');
+                currentSrc = imageElement.src;
+                imageElement.src = currentSrc.replace("/img/cnvmp4", "/img/cnvmp3");
+
+                audioBox.style.display = "block";
+                videoBox.style.display = "none";
+                audioInputText.style.display = "block";
+                videoInputText.style.display = "none";
+            } else {
+                document.querySelector('.format-select-options[data-format="0"]').classList.add('active');
+                document.getElementById('format-select-display-value').textContent = 'MP4';
+                audioBox = document.querySelector(".quality-audio-select-box");
+                videoBox = document.querySelector(".quality-video-select-box");
+                audioInputText = document.querySelector("#quality-audio-input-text");
+                videoInputText = document.querySelector("#quality-video-input-text");
+                imageElement = document.getElementById('website-image');
+                currentSrc = imageElement.src;
+                imageElement.src = currentSrc.replace("/img/cnvmp3", "/img/cnvmp4");
+
+                audioBox.style.display = "none";
+                videoBox.style.display = "none";
+                audioInputText.style.display = "none";
+                videoInputText.style.display = "none";
+                extension = 0
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const body = document.body;
+        const button = document.getElementById('theme-button');
+        const img = document.getElementById('website-image');
+
+        // Load the saved theme from localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.classList.add(savedTheme);
+            updateTheme(savedTheme);
+        }
+
+        // Toggle theme and cache the selection
+        button.addEventListener('click', function () {
+            body.classList.toggle('light-theme');
+            const theme = body.classList.contains('light-theme') ? 'light-theme' : 'dark-theme';
+            localStorage.setItem('theme', theme);
+            updateTheme(theme);
+        });
+
+        // Update theme-related elements
+        function updateTheme(theme) {
+            formatValue = parseInt(document.querySelector('.format-select-options.active').getAttribute('data-format'));
+
+            let format = formatValue === 1 ? 'mp3' : 'mp4';
+
+            // Set the image source based on theme and format
+            if (theme === 'light-theme') {
+                img.src = `/img/cnv${format}.png`; // Light theme image path
+                button.textContent = 'Light Theme';
+            } else {
+                img.src = `/img/cnv${format}-black.png`; // Dark theme image path
+                button.textContent = 'Dark Theme';
+            }
+        }
+    });
+
+    document.getElementById('format-select-display').addEventListener('click', function(event) {
+        var formatSelectList = document.getElementById('format-select-list');
+        if (formatSelectList.style.display === 'none' || formatSelectList.style.display === '') {
+            formatSelectList.style.display = 'block';
+        } else {
+            formatSelectList.style.display = 'none';
+        }
+        event.stopPropagation(); // Prevent the event from propagating to the document listener
+    });
+
+    document.addEventListener('click', function(event) {
+        var formatSelectList = document.getElementById('format-select-list');
+        if (formatSelectList.style.display === 'block') {
+            formatSelectList.style.display = 'none';
+        }
+    });
+
+    document.querySelectorAll('.format-select-options').forEach(option => {
+        option.addEventListener('click', function() {
+            // Remove 'active' class from all options and add it to the selected option
+            document.querySelectorAll('.format-select-options').forEach(opt => opt.classList.remove('active'));
+            this.classList.add('active');
+
+            // Update display text with the selected format
+            const formatText = this.textContent;
+            document.getElementById('format-select-display-value').textContent = formatText;
+
+            // Hide the options list
+            document.getElementById('format-select-list').style.display = 'none';
+
+            // Retrieve the selected format value
+            const formatValue = parseInt(this.getAttribute('data-format'));
+
+            // Select the label element
+            youtubeLabel = document.querySelector('label.social-button-container.youtube.active');
+
+            // Check if it has both classes
+            isYoutubeActive = youtubeLabel && youtubeLabel.classList.contains('youtube') && youtubeLabel.classList.contains('active');
+
+            // Perform actions based on selected format
+            if (formatValue === 1 && isYoutubeActive) {
+                audioBox = document.querySelector(".quality-audio-select-box");
+                videoBox = document.querySelector(".quality-video-select-box");
+                audioInputText = document.querySelector("#quality-audio-input-text");
+                videoInputText = document.querySelector("#quality-video-input-text");
+                imageElement = document.getElementById('website-image');
+                currentSrc = imageElement.src;
+                imageElement.src = currentSrc.replace("/img/cnvmp4", "/img/cnvmp3");
+
+                audioBox.style.display = "block";
+                videoBox.style.display = "none";
+                audioInputText.style.display = "block";
+                videoInputText.style.display = "none";
+            } else if (formatValue === 0 && isYoutubeActive) {
+                audioBox = document.querySelector(".quality-audio-select-box");
+                videoBox = document.querySelector(".quality-video-select-box");
+                audioInputText = document.querySelector("#quality-audio-input-text");
+                videoInputText = document.querySelector("#quality-video-input-text");
+                imageElement = document.getElementById('website-image');
+                currentSrc = imageElement.src;
+
+                imageElement.src = currentSrc.replace("/img/cnvmp3", "/img/cnvmp4");
+                audioBox.style.display = "none";
+                videoBox.style.display = "block";
+                audioInputText.style.display = "none";
+                videoInputText.style.display = "block";
+            } else if (formatValue === 1 && !isYoutubeActive) {
+                audioBox = document.querySelector(".quality-audio-select-box");
+                videoBox = document.querySelector(".quality-video-select-box");
+                audioInputText = document.querySelector("#quality-audio-input-text");
+                videoInputText = document.querySelector("#quality-video-input-text");
+                imageElement = document.getElementById('website-image');
+                currentSrc = imageElement.src;
+                imageElement.src = currentSrc.replace("/img/cnvmp4", "/img/cnvmp3");
+
+                audioBox.style.display = "none";
+                videoBox.style.display = "none";
+                audioInputText.style.display = "none";
+                videoInputText.style.display = "none";
+
+                extension = 1
+            } else if (formatValue === 0 && !isYoutubeActive) {
+                audioBox = document.querySelector(".quality-audio-select-box");
+                videoBox = document.querySelector(".quality-video-select-box");
+                audioInputText = document.querySelector("#quality-audio-input-text");
+                videoInputText = document.querySelector("#quality-video-input-text");
+                imageElement = document.getElementById('website-image');
+                currentSrc = imageElement.src;
+
+                imageElement.src = currentSrc.replace("/img/cnvmp3", "/img/cnvmp4");
+                audioBox.style.display = "none";
+                videoBox.style.display = "none";
+                audioInputText.style.display = "none";
+                videoInputText.style.display = "none";
+
+                extension = 0
+            }
+        });
+    });
+
+    document.getElementById('quality-audio-select-display').addEventListener('click', function(event) {
+        var qualitySelectList = document.getElementById('quality-audio-select-list');
+        if (qualitySelectList.style.display === 'none' || qualitySelectList.style.display === '') {
+            qualitySelectList.style.display = 'block';
+        } else {
+            qualitySelectList.style.display = 'none';
+        }
+        event.stopPropagation(); // Prevent the event from propagating to the document listener
+    });
+
+    document.addEventListener('click', function(event) {
+        var qualitySelectList = document.getElementById('quality-audio-select-list');
+        if (qualitySelectList.style.display === 'block') {
+            qualitySelectList.style.display = 'none';
+        }
+    });
+
+    document.querySelectorAll('.quality-audio-select-options').forEach(option => {
+        option.addEventListener('click', function() {
+            document.querySelectorAll('.quality-audio-select-options').forEach(opt => opt.classList.remove('active'));
+            this.classList.add('active');
+            const qualityText = this.textContent;
+            document.getElementById('quality-audio-select-display-value').textContent = qualityText;
+            document.getElementById('quality-audio-select-list').classList.add('hidden');
+
+            // Update the quality value based on the selected option's ID
+            const selectedQuality = this.getAttribute('id').split('-').pop();
+            quality = parseInt(selectedQuality);
+        });
+    });
+
+    document.getElementById('quality-video-select-display').addEventListener('click', function(event) {
+        var qualitySelectList = document.getElementById('quality-video-select-list');
+        if (qualitySelectList.style.display === 'none' || qualitySelectList.style.display === '') {
+            qualitySelectList.style.display = 'block';
+        } else {
+            qualitySelectList.style.display = 'none';
+        }
+        event.stopPropagation(); // Prevent the event from propagating to the document listener
+    });
+
+    document.addEventListener('click', function(event) {
+        var qualitySelectList = document.getElementById('quality-video-select-list');
+        if (qualitySelectList.style.display === 'block') {
+            qualitySelectList.style.display = 'none';
+        }
+    });
+
+    document.querySelectorAll('.quality-video-select-options').forEach(option => {
+        option.addEventListener('click', function() {
+            document.querySelectorAll('.quality-video-select-options').forEach(opt => opt.classList.remove('active'));
+            this.classList.add('active');
+            const qualityText = this.textContent;
+            document.getElementById('quality-video-select-display-value').textContent = qualityText;
+            document.getElementById('quality-video-select-list').classList.add('hidden');
+
+            // Update the quality value based on the selected option's ID
+            const selectedQuality = this.getAttribute('id').split('-').pop();
+            quality = parseInt(selectedQuality);
+        });
+    });
+</script>
+</body>
+</html>
