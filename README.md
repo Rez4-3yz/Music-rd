@@ -3,7 +3,7 @@
   <img src="https://files.catbox.moe/6dqscp.jpg" />
 </p>
 
-///=== Music Old dan New Campuran ===///
+``` ///=== Music Old dan New Campuran ===///
 
 case 'music1':
 case 'music2':
@@ -74,3 +74,5 @@ Rza2005.sendMessage(from, { react: { text: "🎧", key: m.key }})
 Rz2005_dev = await getBuffer(`https://github.com/Rez4-3yz/Music-rd/raw/master/music/${command}.mp3`)
 await Rza2005.sendMessage(m.chat, { audio: Rz2005_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 break
+
+```
