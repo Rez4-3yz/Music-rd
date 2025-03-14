@@ -3,8 +3,10 @@
   <img src="https://files.catbox.moe/6dqscp.jpg" />
 </p>
 
-``` ///=== Music Old dan New Campuran ===///
+ ///=== Music Old dan New Campuran ===///
 
+ Vesi Case
+```
 case 'music1':
 case 'music2':
 case 'music3':
@@ -75,4 +77,32 @@ Rz2005_dev = await getBuffer(`https://github.com/Rez4-3yz/Music-rd/raw/master/mu
 await Rza2005.sendMessage(m.chat, { audio: Rz2005_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 break
 
+```
+Versi puglis
+
+``` let handler = async (m, { conn, command }) => {
+m.reply(wait)
+let audio = `https://github.com/Rez4-3yz/Music-rd/raw/master/music/${command}.mp3`
+await conn.sendFile(m.chat, audio, 'error.mp3', null, fkontak, true, {
+type: 'audioMessage', 
+ptt: false, seconds: 0,contextInfo: {
+         externalAdReply: { showAdAttribution: true,
+ mediaUrl: 'https://instagram.com/Rza2005vi',
+    mediaType: 2, 
+    description: 'https://instagram.com/Rza2005vi',
+    title: "⬜ ◽◻️▫️ \n _*[ ⏲️ ] L o d i n g...*_",
+    body: `${command}`,
+    thumbnail: await (await fetch('https://files.catbox.moe/6dqscp.jpg')).buffer(),
+    sourceUrl: 'https://instagram.com/Rza2005vi'
+}
+     }
+    })
+}
+
+handler.help = ['music1','music2','music3','music4','music5','music6','music7','music8','music9','music10','music11','music12','music13','music14','music15','music16','music17','music18','music19','music20','music21','music22','music23','music24','music25','music26','music27','music28','music29','music30','music31','music32','music33','music34','music35','music36','music37','music38','music39','music40','music41','music42','music43','music44','music45','music46','music47','music48','music49','music50','music51','music52','music53','music54','music55','music56','music57','music58','music59','music60','music61','music62','musicd63','music64','music65']
+handler.tags = ['music']
+handler.command = /^(music1|music2|music3|music4|music5|music6|music7|music8|music9|music10|music11|music12|music13|music14|music15|music16|music17|music18|music19|music20|music21|music22|music23|music24|music25|music26|music27|music28|music29|music30|music31|music32|music33|music34|music35|music36|music37|music38|music39|music40|music41|music42|music43|music44|music45|music46|music47|music48|music49|music50|music51|music52|music53|music54|music55|music56|music57|music58|music59|music60|music61|music62|music63|music64|music65)$/i
+handler.owner = false
+handler.limit = true
+export default handler
 ```
