@@ -2,6 +2,7 @@
 <p align="center">
   <img src="https://files.catbox.moe/6dqscp.jpg" />
 </p>
+[ 2024 Name Rza 2005 ]
 
  ///=== Music Old dan New Campuran ===///
 
@@ -78,7 +79,7 @@ await Rza2005.sendMessage(m.chat, { audio: Rz2005_dev, mimetype: 'audio/mp4', pt
 break
 
 ```
-Versi puglis
+Versi Plugins
 
 ``` let handler = async (m, { conn, command }) => {
 m.reply(wait)
