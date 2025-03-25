@@ -6,7 +6,7 @@
 
  ///=== Music Old dan New Campuran ===///
 
- Vesi Case
+ ## ````Versi Case```
 ```
 case 'music1':
 case 'music2':
@@ -113,7 +113,7 @@ Rza2005i_dev = await getBuffer(`https://github.com/Rez4-3yz/Music-rd/raw/master/
 await Com.sendMessage(m.chat, { audio: Rza2005i_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 break
 ```
-Versi Plugins
+## ```Versi Plugins```
 
 ``` let handler = async (m, { conn, command }) => {
 m.reply(wait)
