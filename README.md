@@ -2,7 +2,8 @@
 <p align="center">
   <img src="https://files.catbox.moe/6dqscp.jpg" />
 </p>
-[ ( Rilis 2024 ) Name Rza 2005 ]
+
+ ## [ ( Rilis 27 Desember 2024 ) Name Rza 2005 ]
 
  ## [ 65 Music di Perbarui jadi 100 Music ( Selasa, 25 Maret 2025 )]
 
