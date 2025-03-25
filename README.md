@@ -3,9 +3,9 @@
   <img src="https://files.catbox.moe/6dqscp.jpg" />
 </p>
 
- ## [ ( RiLis 27 Desember 2024 ) Name Rza 2005 ]
+ ## 🌌 [ ( RiLis 27 Desember 2024 ) Name Rza 2005 ]
 
- ## [ 65 Music Di Perbarui jadi 100 Music ( Selasa, 25 Maret 2025 )]
+ ## 🎧 [ 65 Music Di Perbarui jadi 100 Music ( Selasa, 25 Maret 2025 )]
 
  ## ///=== Music Old dan New Campuran ===/// WhatsApp
 
