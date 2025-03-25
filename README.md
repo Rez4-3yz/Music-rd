@@ -73,11 +73,45 @@ case 'music62':
 case 'music63':
 case 'music64':
 case 'music65':
-Rza2005.sendMessage(from, { react: { text: "🎧", key: m.key }})
-Rz2005_dev = await getBuffer(`https://github.com/Rez4-3yz/Music-rd/raw/master/music/${command}.mp3`)
-await Rza2005.sendMessage(m.chat, { audio: Rz2005_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+case 'music66':
+case 'music67':
+case 'music68':
+case 'music69':
+case 'music70':
+case 'music71':
+case 'music72':
+case 'music73':
+case 'music74':
+case 'music75':
+case 'music76':
+case 'music77':
+case 'music78':
+case 'music79':
+case 'music80':
+case 'music81':
+case 'music82':
+case 'music83':
+case 'music84':
+case 'music85':
+case 'music86':
+case 'music87':
+case 'music88':
+case 'music89':
+case 'music90':
+case 'music91':
+case 'music92':
+case 'music93':
+case 'music94':
+case 'music95':
+case 'music96':
+case 'music97':
+case 'music98':
+case 'music99':
+case 'music100':
+Com.sendMessage(from, { react: { text: "🎧", key: m.key }})
+Rza2005i_dev = await getBuffer(`https://github.com/Rez4-3yz/Music-rd/raw/master/music/${command}.mp3`)
+await Com.sendMessage(m.chat, { audio: Rza2005i_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 break
-
 ```
 Versi Plugins
 
