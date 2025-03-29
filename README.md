@@ -111,16 +111,46 @@ case 'music97':
 case 'music98':
 case 'music99':
 case 'music100':
-Com.sendMessage(from, { react: { text: "🎧", key: m.key }})
-Rza2005i_dev = await getBuffer(`https://github.com/Rez4-3yz/Music-rd/raw/master/music/${command}.mp3`)
-await Com.sendMessage(m.chat, { audio: Rza2005i_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+case 'music101':
+case 'music102':
+case 'music103':
+case 'music104':
+case 'music105':
+case 'music106':
+case 'music107':
+case 'music109':
+case 'music110':
+case 'music111':
+case 'music112':
+case 'music113':
+case 'music114':
+case 'music115':
+case 'music116':
+case 'music117':
+case 'music118':
+case 'music119':
+case 'music120':
+case 'music121':
+case 'music122':
+case 'music123':
+case 'music124':
+case 'music125':
+case 'music126':
+case 'music127':
+case 'music128':
+case 'music129':
+case 'music130':
+Rza2005.sendMessage(from, { react: { text: "🎧", key: m.key }})
+Rza2005_dev = await getBuffer(`https://github.com/Rza2005ni/Music-rd/raw/master/music/${command}.mp3`)
+await Rza2005.sendMessage(m.chat, { audio: Rza2005_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 break
+
 ```
 ## ```Versi Plugins```
 
-``` let handler = async (m, { conn, command }) => {
+```
 m.reply(wait)
-let audio = `https://github.com/Rez4-3yz/Music-rd/raw/master/music/${command}.mp3`
+let audio = `https://github.com/Rza2005ni/Music-rd/raw/master/music/${command}.mp3`
 await conn.sendFile(m.chat, audio, 'error.mp3', null, fkontak, true, {
 type: 'audioMessage', 
 ptt: false, seconds: 0,contextInfo: {
@@ -137,9 +167,9 @@ ptt: false, seconds: 0,contextInfo: {
     })
 }
 
-handler.help = ['music1','music2','music3','music4','music5','music6','music7','music8','music9','music10','music11','music12','music13','music14','music15','music16','music17','music18','music19','music20','music21','music22','music23','music24','music25','music26','music27','music28','music29','music30','music31','music32','music33','music34','music35','music36','music37','music38','music39','music40','music41','music42','music43','music44','music45','music46','music47','music48','music49','music50','music51','music52','music53','music54','music55','music56','music57','music58','music59','music60','music61','music62','musicd63','music64','music65']
+handler.help = ['music1','music2','music3','music4','music5','music6','music7','music8','music9','music10','music11','music12','music13','music14','music15','music16','music17','music18','music19','music20','music21','music22','music23','music24','music25','music26','music27','music28','music29','music30','music31','music32','music33','music34','music35','music36','music37','music38','music39','music40','music41','music42','music43','music44','music45','music46','music47','music48','music49','music50','music51','music52','music53','music54','music55','music56','music57','music58','music59','music60','music61','music62','music63','music64','music65','music66','music67','music69','music70','music71','music72','music73','music74','music75','music78','music79','music80','music81','music82','music83','music84','music85','music86','music87','music89','music90','music91','music92','music93','music94','music95','music96','music97','music98','music99','music100','music101','music102','music103','music104','music105','music106','music107','music108','music109','music110','music112','music113','music114','music115','music116','music117','music118','music119','music120','music121','music122','music123','music124','music125','music126','music127','music128','music129','music130']
 handler.tags = ['music']
-handler.command = /^(music1|music2|music3|music4|music5|music6|music7|music8|music9|music10|music11|music12|music13|music14|music15|music16|music17|music18|music19|music20|music21|music22|music23|music24|music25|music26|music27|music28|music29|music30|music31|music32|music33|music34|music35|music36|music37|music38|music39|music40|music41|music42|music43|music44|music45|music46|music47|music48|music49|music50|music51|music52|music53|music54|music55|music56|music57|music58|music59|music60|music61|music62|music63|music64|music65)$/i
+handler.command = /^(music1|music2|music3|music4|music5|music6|music7|music8|music9|music10|music11|music12|music13|music14|music15|music16|music17|music18|music19|music20|music21|music22|music23|music24|music25|music26|music27|music28|music29|music30|music31|music32|music33|music34|music35|music36|music37|music38|music39|music40|music41|music42|music43|music44|music45|music46|music47|music48|music49|music50|music51|music52|music53|music54|music55|music56|music57|music58|music59|music60|music61|music62|music63|music64|music65|music66|music67|music69|music70|music71|music72|music73|music74|music75|music78|music79|music80|music81|music82|music83|music84|music85|music86|music87|music89|music90|music91|music92|music93|music94|music95|music96|music97|music98|music99|music100|music101|music102|music103|music104|music105|music106|music107|music108|music109|music110|music112|music113|music114|music115|music116|music117|music118|music119|music120|music121|music122|music123|music124|music125|music126|music127|music128|music129|music130)$/i
 handler.owner = false
 handler.limit = true
 export default handler
