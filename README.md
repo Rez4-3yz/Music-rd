@@ -11,6 +11,10 @@
 
  ## ```Versi Case```
 ```
+///=== *Music Old dan New Campuran* ===///
+//// (2017) (2024) ////
+/// *65 Music di Perbarui Jadi 130 Music*
+
 case 'music1':
 case 'music2':
 case 'music3':
@@ -140,11 +144,10 @@ case 'music127':
 case 'music128':
 case 'music129':
 case 'music130':
-Rza2005.sendMessage(from, { react: { text: "🎧", key: m.key }})
+Botwa.sendMessage(from, { react: { text: "🎧", key: m.key }})
 Rza2005_dev = await getBuffer(`https://github.com/Rza2005ni/Music-rd/raw/master/music/${command}.mp3`)
-await Rza2005.sendMessage(m.chat, { audio: Rza2005_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+await Botwa.sendMessage(m.chat, { audio: Rza2005_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 break
-
 ```
 ## ```Versi Plugins```
 
