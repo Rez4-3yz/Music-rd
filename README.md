@@ -143,9 +143,9 @@ case 'music127':
 case 'music128':
 case 'music129':
 case 'music130':
-Botwa.sendMessage(from, { react: { text: "🎧", key: m.key }})
+Botzwa.sendMessage(from, { react: { text: "🎧", key: m.key }})
 Rza2005_dev = await getBuffer(`https://github.com/Rza2005ni/Music-rd/raw/master/music/${command}.mp3`)
-await Botwa.sendMessage(m.chat, { audio: Rza2005_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
+await Botzwa.sendMessage(m.chat, { audio: Rza2005_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 break
 ```
 ## ```Versi Plugins```
