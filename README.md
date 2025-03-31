@@ -1,3 +1,4 @@
+![thum](https://github.com/user-attachments/assets/bde82fd4-080b-4645-b56b-3539aeba5cd5)
 <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px">Hi, I am Rza 2005 👨‍💻 🌌 [ ( Music untuk Botz RiLis 27 Desember 2024 )
 <p align="center">
   <img src="https://files.catbox.moe/6dqscp.jpg" />
