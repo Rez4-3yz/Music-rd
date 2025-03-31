@@ -11,7 +11,7 @@
 
  ## ```Versi Case```
 ```
-///=== *Music Old dan New Campuran* ===///
+///=== Music Old dan New Campuran ===///
 /// 65 Music di Perbarui Jadi 130 Music
 
 case 'music1':
