@@ -146,7 +146,7 @@ case 'music128':
 case 'music129':
 case 'music130':
 Botzwa.sendMessage(from, { react: { text: "🎧", key: m.key }})
-Rza2005_dev = await getBuffer(`https://github.com/Rza2005ni/Music-rd/raw/master/music/${command}.mp3`)
+Rza2005_dev = await getBuffer(`https://github.com/Rez4-3yz/Music-rd/raw/master/music/${command}.mp3`)
 await Botzwa.sendMessage(m.chat, { audio: Rza2005_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
 break
 ```
@@ -154,7 +154,7 @@ break
 
 ```
 m.reply(wait)
-let audio = `https://github.com/Rza2005ni/Music-rd/raw/master/music/${command}.mp3`
+let audio = `https://github.com/Rez4-3yz/Music-rd/raw/master/music/${command}.mp3`
 await conn.sendFile(m.chat, audio, 'error.mp3', null, fkontak, true, {
 type: 'audioMessage', 
 ptt: false, seconds: 0,contextInfo: {
