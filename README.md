@@ -162,7 +162,7 @@ ptt: false, seconds: 0,contextInfo: {
  mediaUrl: 'https://instagram.com/Rza2005vi',
     mediaType: 2, 
     description: 'https://instagram.com/Rza2005vi',
-    title: "⬜ ◽◻️▫️ \n _*[ ⏲️ ] L o d i n g...*_",
+    title: "L o d i n g...",
     body: `${command}`,
     thumbnail: await (await fetch('https://files.catbox.moe/6dqscp.jpg')).buffer(),
     sourceUrl: 'https://instagram.com/Rza2005vi'
