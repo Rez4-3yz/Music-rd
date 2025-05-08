@@ -5,13 +5,15 @@
   <img src="https://files.catbox.moe/6dqscp.jpg" />
 </p>
 
- ## 🌌 [ ( RiLis 27 Desember 2024 ) Name Rza 2005 ]
+## 🌌 ( RiLis 27 Desember 2024 ) Name Rza 2005 ]
 
- ## 🎧 [ 65 Music Di Perbarui jadi 130 Music ( Selasa, 25 Maret 2025 )]
+## 🎧 [ 65 Music Di Perbarui jadi 140 Music 
+ 
+## [( Selasa, 25 Maret 2025 )]
 
- ## ///=== Music Old dan New Campuran ===/// WhatsApp
+## ///=== Music Old dan New Campuran ===/// WhatsApp
 
- ## ```Versi Case```
+## ```Versi Case```
 ```
 ///=== Music Old dan New Campuran ===///
 /// 65 Music di Perbarui Jadi 130 Music
@@ -145,6 +147,16 @@ case 'music127':
 case 'music128':
 case 'music129':
 case 'music130':
+case 'music131':
+case 'music132':
+case 'music133':
+case 'music134':
+case 'music135':
+case 'music136':
+case 'music137':
+case 'music138':
+case 'music139':
+case 'music140':
 Botzwa.sendMessage(from, { react: { text: "🎧", key: m.key }})
 Rza2005_dev = await getBuffer(`https://raw.githubusercontent.com/Rez4-3yz/Music-rd/master/music/${command}.mp3`)
 await Botzwa.sendMessage(m.chat, { audio: Rza2005_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
@@ -191,7 +203,7 @@ await conn.sendMessage(m.chat, { react: { text: '🎧', key: m.key } });
     }
 };
 
-handler.help = Array.from({ length: 130 }, (_, i) => `music${i + 1}`);
+handler.help = Array.from({ length: 140 }, (_, i) => `music${i + 1}`);
 handler.tags = ['audio'];
 handler.command = new RegExp(`^(${handler.help.join('|')})$`, 'i');
 handler.owner = false;
